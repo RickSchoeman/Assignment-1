@@ -1,5 +1,5 @@
 package Scenario3;
 
-public interface Image {
+public interface Picture {
 	public void display();
 }
