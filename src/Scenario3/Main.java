@@ -5,28 +5,28 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-		List<Image> proxyImages = new ArrayList<Image>();
-		proxyImages.add(new ProxyHighResImage("proxyimage1.png"));
-		proxyImages.add(new ProxyHighResImage("proxyimage2.png"));
-		proxyImages.add(new ProxyHighResImage("proxyimage3.png"));
-		proxyImages.add(new ProxyHighResImage("proxyimage4.png"));
-		List<Image> hRImages = new ArrayList<Image>();
-		hRImages.add(new HighResImage("image1.png"));
-		hRImages.add(new HighResImage("image2.png"));
-		hRImages.add(new HighResImage("image3.png"));
-		hRImages.add(new HighResImage("image4.png"));
-		System.out.println("\nProxy images:");
-		for(Image i : proxyImages){
+		List<Picture> proxyPictures = new ArrayList<Picture>();
+		proxyPictures.add(new ProxyHighResPicture("proxyPicture1.png"));
+		proxyPictures.add(new ProxyHighResPicture("proxyPicture2.png"));
+		proxyPictures.add(new ProxyHighResPicture("proxyPicture3.png"));
+		proxyPictures.add(new ProxyHighResPicture("proxyPicture4.png"));
+		List<Picture> hRPictures = new ArrayList<Picture>();
+		hRPictures.add(new HighResPicture("Picture1.png"));
+		hRPictures.add(new HighResPicture("Picture2.png"));
+		hRPictures.add(new HighResPicture("Picture3.png"));
+		hRPictures.add(new HighResPicture("Picture4.png"));
+		System.out.println("\nProxy Pictures:");
+		for(Picture i : proxyPictures){
 			i.display();
 		}
-		System.out.println("\nHigh Resolution images:");
-		for(Image i : hRImages){
+		System.out.println("\nHigh Resolution Pictures:");
+		for(Picture i : hRPictures){
 			i.display();
 		}
 		System.out.println("");
-		proxyImages.get(0).display();
-		proxyImages.get(1).display();
-		proxyImages.get(2).display();
-		proxyImages.get(3).display();
+		proxyPictures.get(0).display();
+		proxyPictures.get(1).display();
+		proxyPictures.get(2).display();
+		proxyPictures.get(3).display();
 	}
 }
